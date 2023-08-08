@@ -15,18 +15,12 @@ const translate = require("translation-google")
 //         console.log('You will see this message every 5 second');
 //         chatIds.forEach((chatId) => {
 //             bot.sendMessage(chatId, "salom")
-
 //         })
-
 //     },
 //     null,
 //     true,
-
 // );
 // Use this if the 4th param is default value(false)
-
-
-
 // bot.on('text', (msg) => msg.reply.text("Kelgan habar:  " + " " + msg.text));
 
 bot.on("/start", (msg) => {
@@ -50,7 +44,7 @@ bot.on("/stop", (msg) => {
 bot.on('text',async (msg) =>{
 const text = msg.update.message.text
  const newText = await translate(text,{form:"uz",to:"en"});
-msg.reply( `${newText.text } --- ${ text} `);
+msg.reply( `${newText.text }    ⇆👍⇄    ${ text} `);
 
 })
 

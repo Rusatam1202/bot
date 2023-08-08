@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -15,5 +17,8 @@
     "telegraf": "^4.12.2",
     "translate-google": "^1.5.0",
     "translation-google": "^0.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
   }
 }
